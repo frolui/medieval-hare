@@ -25,6 +25,20 @@
     left: 0;   
 }
 
+.game-field{
+    position: relative;
+    top: -13%;
+    left: -10%;
+    height: 120%;
+}
+
+.random_question{
+    position: relative;
+    top: -550px;
+    left: 175px;
+    width: 500px;
+}
+
 .start-button{
     position: relative;
     background: none;
@@ -93,3 +107,58 @@
     }
 
 }
+
+.btn-two {
+    color: rgb(226, 26, 26);
+    transition: all 0.5s;
+    position: relative; 
+    top: 400px;
+    right: 480px;
+}
+  }
+  .btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(226, 130, 130, 0.4);
+    background-color: rgba(226,130,130,0.3);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(226, 130, 130, 0.4);
+    background-color: rgba(226,130,130,0.3);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
