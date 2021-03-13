@@ -9,6 +9,7 @@
     width: 800px;
     margin: auto;
 
+    /* background: url("../assets/images/jpg/base_scene.jpg"); */
     background: url("../assets/images/jpg/empty_scene.jpg");
 }
 
@@ -29,6 +30,13 @@
     background: none;
     border: none;
 }
+.start-button:focus{
+    border:none;
+    outline: none;
+}
+/* .start_button:hover{
+    rotate: ;
+} */
 
 .start-button-img{
     position: relative;
@@ -36,10 +44,27 @@
     left: 180px;
     height: 440px;
 }
+
 .bird{
     position: relative;
-    top: 105px;
+    top: 108px;
     left: 149px;
+}
+
+.hare{
+    position: relative;
+    top: 159px;
+    left: 418px;
+}
+
+.owl{
+    position: relative;
+    top: -84px;
+    left: 390px;
+    height: 100px;
+    opacity: 1;
+    animation-duration: 3s;
+    animation-name: animation-owl;
 }
 
 .show {
@@ -48,4 +73,23 @@
 
 .hide {
     display: none
+}
+.owl-animation{
+    animation-duration: 3s;
+    animation-name: animation-owl;
+}
+
+@keyframes animation-owl{
+    from {
+        top: -390px;
+        left: -5px;
+        opacity: 0;
+    }
+
+    to {
+        top: -84px;
+        left: 390px;
+        opacity: 1;
+    }
+
 }

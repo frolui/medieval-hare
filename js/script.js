@@ -7,7 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         startButton.remove();
-        setInterval(showContent, 2000);
+        setInterval(showContent, 0);
+
+        // add animation class to owl
+        document.querySelector('.owl').classList.add('.owl-animation');
     });
 
     function hideContent() {
