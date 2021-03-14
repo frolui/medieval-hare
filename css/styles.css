@@ -109,11 +109,18 @@
 }
 
 .btn-two {
+    z-index: 1;
     color: rgb(226, 26, 26);
     transition: all 0.5s;
     position: relative; 
     top: 400px;
     right: 480px;
+}
+.win-text{
+    z-index: 2;
+    position: relative; 
+    top: 460px;
+    right: 400px;
 }
   }
   .btn-two span {
@@ -132,8 +139,8 @@
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    border: 1px solid rgba(226, 130, 130, 0.4);
-    background-color: rgba(226,130,130,0.3);
+    background: url("../assets/images/png/mech.png");
+    background-size: 100%;
   }
   .btn-two::after {
     content: '';
@@ -144,8 +151,9 @@
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    border: 1px solid rgba(226, 130, 130, 0.4);
-    background-color: rgba(226,130,130,0.3);
+    background: url("../assets/images/png/mech.png");
+    background-size: 100%;
+    transform: rotate(190deg);
   }
   .btn-two:hover::before {
     transform: rotate(-45deg);
@@ -162,3 +170,47 @@
     width: 250px;
     cursor: pointer;
   }
+  /*--Button Styles--*/
+.btn-slice {
+    position: relative;
+    top: 400px;
+    right: 400px;
+    height: 20px;
+}
+.btn-slice-img{
+    position: absolute;
+    top: -140px;
+    right: -30px;
+    height: 180px;
+}
+.btn-slice-img:hover{
+    transform: rotateX(40deg);
+    height: 220px;
+}
+.lose-text{
+    position: relative;
+    top: 55px;
+    right: -10px;
+}
+.new-questions{
+    position: relative;
+    top: 250px;
+    right: 1040px;
+    height: 200px;
+    width: 120px;
+}
+.new-questions-request{
+    position: relative;
+    top: 175px;
+    right: 5px;
+}
+.new-questions-img{
+    position: relative;
+    top: -30px;
+    right: 40px;
+    height: 180px;
+}
+.new-questions-img:hover{
+    transform: rotateY(20deg);
+    height: 170px;
+}
