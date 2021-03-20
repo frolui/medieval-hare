@@ -26,6 +26,7 @@
 }
 
 .game-field{
+    z-index: 0;
     position: relative;
     top: -13%;
     left: -10%;
@@ -213,4 +214,43 @@
 .new-questions-img:hover{
     transform: rotateY(20deg);
     height: 170px;
+}
+
+.a-footer{
+    position: relative;  
+}
+.footer-img{
+    position: relative;
+    top: 2px;
+    height: 110px;
+    left: 670px;
+    transform: rotateY(20deg);
+}
+.footer-img:hover{
+    transform: rotateY(35deg);
+}
+.shield-top{
+    position: relative;
+    top: -6px;
+    right: 414px;
+}
+.shield-img-top{
+    z-index: 1;
+    position: relative;
+    height: 91px;
+    left: 1387px;
+    top: 101px;
+}
+.shield-bottom{
+    position: relative;
+    top: 580px;
+    left: 480px;
+}
+.shield-img-bottom{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    height: 90px;
+    transform: rotate(35deg);
 }
